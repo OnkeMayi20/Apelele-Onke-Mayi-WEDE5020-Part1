@@ -3,16 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry</title>
+    <title>Book / Order Enquiry - Apelele Hair Collection</title>
 </head>
 <body>
+
+    <header>
+        <h1>Apelele Hair Collection</h1>
+        <p>100% Raw Vietnamese Hair & Custom Wig Services in Gqeberha</p>
+    </header>
   
     <nav>
-    <a href="About.html">About</a>
-    <a href="index.html">Home</a>
-    <a href="Enquiry.html">Enquiry</a>
+     
+   <a href="index.html">Home</a>
+  <a href="Enquiry.html">Enquiry</a>
     <a href="Contact.html">Contact</a>
     <a href="Services.html">Services</a> 
+    <a href="About.html">About</a>
+    
   </nav>
+
+  <main>
+    <section>
+        <h2>Order & Appointment Enquiry</h2>
+        <p>Please complete the form below to enquire about bundles availability, pre-order custom hair lengths, or book a wig-fitting session in Gqeberha.</p>
+    </section>
+
+    <section>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Client Details</legend>
+
+                <p>
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" required placeholder="e.g Apelele Mayi>
+
+                </p>
+
+                <p>
+                    <Label for="email">Email Address:</p>label><br>
+                    <input type="email" id="phone" name="phone" required placeholder="e.g client@example.co.za">
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone / WhatsApp Number:</label><br>
+                        <input type="tel" id="phone" required placeholder="e.g 012 345 678">
+                    </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Service or Order Type</legend>
+
+                <p>
+                    <label for="services">Select What You Need:</label><br>
+                    <select id="services" name="service" required>
+                        <option value="">-- Select an Option --</option>
+                        <option value="bundles"> Buy Hair Bundles</option>
+                        <option value="wig_construction">Custom Wig Making Service</option>
+                        <option value="fitting">Wig Installation Appointment</option>
+                        <option value="consultation">Hair Quality consultation</option>
+                        </select>
+                </p>
+
+                <p>
+                    <label for="details">Hair Details (Lengths, Textures, Preffered Date):</label><br>
+                    <textarea id="details" ma,e="details" rows="5" cols="40" required placeholder="Specify lengths (e.g, 20, 22, 24, 30 inches) or desired appointment date..."></textarea>
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit value=Submit Enquiry">
+                <input type="reset" value="Clear Form">
+            </p>
+        </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;2026 Apelele Hair Collection. All Rights Reserved.</p>
+    <p>Algoa, Gqeberha, Eastern Cape, South Africa </p>
+  </footer>
+  
 </body>
 </html>
