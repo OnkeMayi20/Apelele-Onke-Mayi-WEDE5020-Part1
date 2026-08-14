@@ -1,31 +1,32 @@
  # Apelele Hair Collection
- **Name:** Apelele Onke Mayi
+ **NAME & SURNAME:** Apelele Onke Mayi
  **Student Number:** ST10488671
 
- # WEDE5020 Part 1 — Website Proposal: Small Business
+ WEDE5020—Part 1: Website Proposal: Small Business
 
-**Course:** WEDE5020 — Web Development 
-**Institution:** Rosebank International College (Nelson Mandela Bay Campus) 
+**Module:**Web Development (WEDE5020) 
 **Lecturer:** Mzimasi Mbongwe 
-**Student Name:** Apelele Onke Mayi
+Student Name: Apelele Onke Mayi
 **Submission Date:** 14 August 2026 
 
 
 
 ##  Project Overview
 
-This repository contains Part 1 of the assignment submission for WEDE5020, focusing on **Small Business**. Apelele Hair Collection is a small business that started of as a side hustle that eventually turned into a passion for selling quality hair for Women around Gqeberha.
+You will find here part 1 of assignment submission for WEDE5020 in relation to Small Business. Apelele Hair Collection is a small side business which grew to be a passion for selling quality hair for women at Gqeberha, South Africa. In growing the business, a website is essential as it will assist in advertising the business and clients will be able to make bookings, view specials and purchase products.
 
 ### Business Profile:
-* **Name:** Apelele Hair Collection
-* **Focus:** Luxury hair boutique specializing in 100% raw Vietnamese virgin weaves, HD lace closures, custom wig creation, and installation services based in Algoa, Gqeberha.
-* **Mission:** To empower women in Gqeberha with top-tier, authentic raw hair extensions alongside expert wig-customization and fitting services.
+The store is called Apelele Hair Collection.
+
+* Focus: It is a luxury hair boutique specializing in 100% raw Vietnamese virgin weaves and HD lace closures, custom wig creation and service of installing the wigs in Algoa Gqeberha. also consists of a Boutique in Algoa, Eastern Cape, South Africa.
+
+Mission: To equip women in Gqeberha with the ultimate in natural quality hair extensions, bundles and weaves also expert education on wig customization and fitting.
 
 
 
 ## Repository Structure
 
-`text
+ Text
 ├── Proposal_Apelele_Hair_Collection.docx
 |--Contact.html
 |--Enquiry.html
