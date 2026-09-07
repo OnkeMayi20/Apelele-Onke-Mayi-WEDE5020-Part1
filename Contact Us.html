@@ -28,39 +28,155 @@
     </header>
 
 
-  <main>
-    <section>
-        <h2>Contact Us</h2>
-        <p>Have questions about hair care, bundle lengths, or studio appointments? Reach out to Apelele directly.</p>
-        <P>032 456 7891 - WhatsApp</P>
-        <P>apehaircollection@gmail.com - Email</P>
-    </section>
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Apelele Hair Collection</title>
 
-    <section>
-        <h2>Studio & Contact Details</h2>
-        <p><strong>Studio Location:</strong>St Leonards Road, Algoa, Gqeberha, 6005, Eastern Cape</p>
-        <p><strong>Phone / WhatsApp:</strong> =27 123 456 7890</p>
-        <p><strong>Email:</strong>info@apelelehair.co.za</p>
-        <p><strong>Studio Hours:</strong>Tuesday - Saturday: 09:00 - 17:00 | Sunday & Wednesday: Closed</p>
-    </section>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="contact.css">
+</head>
 
-    <section>
-        <h2>Collection & Fitting Notes</h2>
-        <p>Local pickups in Algoa are arranged by appointment following confirmation of your order enquiry.</p>
-    </section>
- </main>
+<body>
 
- <form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value=""><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value=""><br><br>
-  <label for="email">Email:</label><br>
-  <label for="emails">Enter email addresses:</label>
-  <input type="email" id="email" name="email">
-  <input type="submit" value="Submit">
-  
-</form> 
+    <main class="contact-container">
+
+        <section class="contact-header">
+            <h1>Contact Us</h1>
+            <p>
+                Have questions about hair care, bundle lengths, or studio
+                appointments? Reach out to Apelele Hair Collection.
+            </p>
+        </section>
+
+        <div class="contact-wrapper">
+
+            <!-- Contact Information -->
+            <section class="contact-info">
+
+                <h2>Get In Touch</h2>
+
+                <div class="contact-item">
+                    <h3>WhatsApp</h3>
+                    <p>032 456 7891</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>apehaircollection@gmail.com</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Studio Location</h3>
+                    <p>
+                        St Leonards Road,<br>
+                        Algoa, Gqeberha,<br>
+                        6005, Eastern Cape
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Phone / WhatsApp</h3>
+                    <p>+27 123 456 7890</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Business Email</h3>
+                    <p>info@apelelehair.co.za</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Studio Hours</h3>
+                    <p>Tuesday - Saturday: 09:00 - 17:00</p>
+                    <p>Sunday & Monday: Closed</p>
+                </div>
+
+                <div class="collection-notes">
+                    <h3>Collection & Fitting</h3>
+                    <p>
+                        Local pickups in Algoa are arranged by appointment
+                        following confirmation of your order enquiry.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <!-- Contact Form -->
+            <section class="contact-form">
+
+                <h2>Send Us A Message</h2>
+
+                <form action="/action_page.php" method="post">
+
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input
+                            type="text"
+                            id="fname"
+                            name="fname"
+                            placeholder="Enter your first name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input
+                            type="text"
+                            id="lname"
+                            name="lname"
+                            placeholder="Enter your last name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="How can we help you?"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
 
  <p>This is the location.</p>
  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.584071322956!2d25.56401397655558!3d-33.900364320695886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e7ad6a7bdf76137%3A0x3b33c27e2272edb2!2s13%20St%20Leonards%20Rd%2C%20Algoa%20Park%2C%20Gqeberha%2C%206001!5e0!3m2!1sen!2sza!4v1786456857916!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
