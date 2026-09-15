@@ -16,11 +16,11 @@ Coaching to support direct client consultations (integrated via Floating WhatsAp
 ## [1.0.0] - 2026-08-04
 
 ### Added
-Combining a grand concept with technical expertise and dedication to design, it is a project that is certain to have a long impact.A grand idea joined by technical expertise and design commitment and dedication, it is a project that will have lasting impact.
+Combining a grand concept with technical expertise and dedication to design, it is a project that is certain to have a long impact.
 
   - Set up clear business objectives, ecommerce KPIs, target audience (Algoa/ NMU students/ Rosebank international students/ Women around Gqeberha), and budgets.
 
-  Adopted luxury brand colour scheme:Soft Cream (#FAF9F6), and Deep Charcoal (#1C1C1C).
+  Adopted luxury brand colour scheme:Soft Cream (#FAF9F6), and Deep Charcoal (#1C1C1C), pink (#f41a99) .
 
 You can create page-based websites using Core 5.Core 5 supports page-based websites.
 

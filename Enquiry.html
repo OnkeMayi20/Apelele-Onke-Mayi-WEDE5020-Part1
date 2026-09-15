@@ -8,83 +8,72 @@
 </head>
 <body>
 
-    <header>
-        <h1>Apelele Hair Collection</h1>
-        <p>100% Raw Vietnamese Hair & Custom Wig Services in Gqeberha</p>
-    </header>
-  
  <header class="site-header">
         <div class="container header-inner">
-            <a class="brand" href="index.html">
-              <img src="images/logo.png">
+            <a class="brand" href="index.html" aria-label="Apelele Hair Collection home">
+              <img class="brand-logo" src="images/logo.png" alt="Apelele Hair Collection logo">
+              <span class="brand-name">Apelele Hair Collection</span>
+            </a>
             <nav class="site-nav" aria-label="Main navigation">
                 <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html" aria-current="page">Services</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
                 <a href="enquiry.html">Enquiry</a>
                 <a href="Contact Us.html">Contact Us</a>
             </nav>
         </div>
     </header>
 
-  <main>
-    <section>
+  <main class="enquiry-page">
+    <section class="enquiry-intro">
         <h2>Order & Appointment Enquiry</h2>
         <p>Please complete the form below to enquire about bundles availability, pre-order custom hair lengths, or book a wig-fitting session in Gqeberha.</p>
     </section>
 
-    <section>
-        <form action="#" method="post">
-            <fieldset>
-                <legend>Client Details</legend>
-
-                <p>
-                    <label for="fullname">Full Name:</label><br>
+    <section class="enquiry-panel">
+        <form action="#" method="post" class="enquiry-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
                     <input type="text" id="fullname" name="fullname" required placeholder="e.g Apelele Mayi">
+                </div>
 
-                </p>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="e.g client@example.co.za">
+                </div>
+            </div>
 
-                <p>
-                    <Label for="email">Email Address:</p><label><br>
-                    <input type="email" id="phone" name="phone" required placeholder="e.g client@example.co.za">
-                    </p>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Phone / WhatsApp Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="e.g 012 345 678">
+                </div>
 
-                    <p>
-                        <label for="phone">Phone / WhatsApp Number:</label><br>
-                        <input type="tel" id="phone" required placeholder="e.g 012 345 678">
-                    </p>
-                </p>
-            </fieldset>
-
-            <fieldset>
-                <legend>Service or Order Type</legend>
-
-                <p>
-                    <label for="services">Select What You Need:</label><br>
+                <div class="form-group">
+                    <label for="services">Select What You Need</label>
                     <select id="services" name="service" required>
                         <option value="">-- Select an Option --</option>
-                        <option value="bundles"> Buy Hair Bundles</option>
+                        <option value="bundles">Buy Hair Bundles</option>
                         <option value="wig_construction">Custom Wig Making Service</option>
                         <option value="fitting">Wig Installation Appointment</option>
                         <option value="consultation">Hair Quality consultation</option>
-                        </select>
-                </p>
+                    </select>
+                </div>
+            </div>
 
-                <p>
-                    <label for="details">Hair Details (Lengths, Textures, Preffered Date):</label><br>
-                    <textarea id="details" ma,e="details" rows="5" cols="40" required placeholder="Specify lengths (e.g, 20, 22, 24, 30 inches) or desired appointment date..."></textarea>
-                </p>
-            </fieldset>
-            <p>
-                <input type="submit value=Submit Enquiry">
+            <div class="form-group">
+                <label for="details">Hair Details</label>
+                <textarea id="details" name="details" rows="5" required placeholder="Specify lengths (e.g, 20, 22, 24, 30 inches), texture preference, or desired appointment date..."></textarea>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit">Submit Enquiry</button>
                 <input type="reset" value="Clear Form">
-            </p>
+            </div>
         </form>
     </section>
   </main>
-
-  <!-- Font Awesome Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <footer class="site-footer">
 
@@ -137,7 +126,7 @@
                 </li>
 
                 <li>
-                    <a href="contact.html">
+                    <a href="Contact Us.html">
                         <i class="fa-solid fa-phone"></i>
                         Contact Us
                     </a>
@@ -167,7 +156,7 @@
                 <li>
                     <i class="fa-brands fa-whatsapp"></i>
 
-                    <a href="https://wa.me/27324567891">
+                    <a href="https://wa.me/27324567891" target="_blank" rel="noopener noreferrer">
                         032 456 7891
                     </a>
                 </li>
@@ -196,16 +185,16 @@
 
             <div class="social-icons">
 
-                <a href="#" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <span aria-hidden="true">◎</span>
                 </a>
 
-                <a href="https://wa.me/27324567891" aria-label="WhatsApp">
-                    <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://wa.me/27324567891" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <span aria-hidden="true">💬</span>
                 </a>
 
                 <a href="mailto:apehaircollection@gmail.com" aria-label="Email">
-                    <i class="fa-solid fa-envelope"></i>
+                    <span aria-hidden="true">✉</span>
                 </a>
 
             </div>
@@ -214,14 +203,8 @@
 
     </div>
 
-
-    <!-- Bottom -->
     <div class="footer-bottom">
-
-        <p>
-            &copy; 2026 Apelele Hair Collection. All rights reserved.
-        </p>
-
+        <p>&copy; 2026 Apelele Hair Collection. All rights reserved.</p>
     </div>
 
 </footer>

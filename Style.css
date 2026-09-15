@@ -50,22 +50,50 @@ a {
 .header-inner {
     display: flex; /* Place children next to each other. */
     align-items: center; /* Align children vertically. */
-    justify-content: space-between; /* Push them to opposite sides. */
-    min-height: 80px; /* Give the header a useful minimum height. */
-    gap: 2rem; /* Add space between the brand and navigation. */
+    min-height: 82px;
+    gap: 1rem;
 }
 
 /* Style the clickable organisation name. */
 .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-right: auto;
     color: #ffffff; /* Display the brand in white. */
-    font-size: 1.25rem; /* Make it larger than normal text. */
     font-weight: bold; /* Emphasise the organisation name. */
+}
+
+/* Style the brand logo image. */
+.brand-logo {
+    display: block;
+    width: 88px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 4px 8px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.brand-name {
+    color: #ffffff;
+    font-size: 1.08rem;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+}
+
+.brand:hover .brand-logo {
+    transform: scale(1.04);
+    opacity: 0.96;
 }
 
 /* Arrange the main navigation links. */
 .site-nav {
     display: flex; /* Place links in one row. */
     gap: 0.35rem; /* Add a small gap between links. */
+    margin-left: auto;
+    flex-wrap: wrap;
 }
 
 /* Style each link inside the main navigation. */
@@ -194,6 +222,37 @@ a {
     margin: 0; /* Remove unwanted space around the copyright. */
 }
 
+/* Footer contact info specific styles */
+.site-footer .contact-info {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+}
+
+.site-footer .contact-info li {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+
+.site-footer .contact-info,
+.site-footer .contact-info li,
+.site-footer .contact-info a,
+.site-footer .contact-info span {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: #ddd;
+}
+
+.site-footer .contact-info li {
+    display: flex;
+    align-items: flex-start;
+}
+
 /* Tablet rules apply when the screen is 900px or narrower. */
 @media (max-width: 900px) {
     /* Stack the brand above the navigation on tablets. */
@@ -234,8 +293,6 @@ a {
     }
 }
 
-
-
     .site-footer {
         background-color: #071722;
         color: white;
@@ -249,6 +306,7 @@ a {
         display: grid;
         grid-template-columns: 1.5fr 1fr 1.5fr 1fr;
         gap: 50px;
+        text-align: left;
     }
 
     .footer-column h3 {
@@ -322,6 +380,8 @@ a {
         align-items: center;
         justify-content: center;
         text-decoration: none;
+        font-size: 1.1rem;
+        line-height: 1;
         transition: 0.3s;
     }
 
@@ -332,7 +392,7 @@ a {
 
     /* Copyright */
     .footer-bottom {
-        border-top: 1px solid #394650;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
         margin-top: 40px;
         padding-top: 20px;
         text-align: center;
@@ -358,6 +418,19 @@ a {
 
         .social-icons {
             justify-content: center;
+        }
+
+        .form-row {
+            grid-template-columns: 1fr;
+        }
+
+        .form-actions {
+            justify-content: stretch;
+        }
+
+        .form-actions button,
+        .form-actions input[type="reset"] {
+            width: 100%;
         }
     }
 
@@ -480,28 +553,33 @@ body {
 
 /* Input Fields */
 .form-group input,
+.form-group select,
 .form-group textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 15px;
-    font-family: Arial, sans-serif;
+    padding: 0.9rem 1rem;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    font: inherit;
+    background-color: #fff;
+    color: #222;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 
 /* Textarea */
 .form-group textarea {
-    height: 130px;
+    min-height: 140px;
     resize: vertical;
 }
 
 
 /* Input Focus */
 .form-group input:focus,
+.form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #f41a99;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(244, 26, 153, 0.12);
 }
 
 
@@ -542,5 +620,278 @@ body {
     .contact-info,
     .contact-form {
         padding: 25px;
+    }
+}
+
+/* Responsive images for index page */
+.hero-graphic,
+.feature-graphic {
+    display: block;
+    max-width: 100%;
+    width: min(100%, 760px);
+    height: auto;
+    margin: 1.5rem auto;
+    border-radius: 18px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.feature-graphic {
+    width: min(100%, 620px);
+}
+
+/* Home page layout and centering */
+.home-tagline {
+    max-width: 900px;
+    margin: 2rem auto 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.home-page {
+    width: min(90%, 1100px);
+    margin: 0 auto;
+    padding: 2rem 0 4rem;
+}
+
+.home-page section {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.home-page section h2,
+.home-page section h3 {
+    color: var(--primary);
+}
+
+.home-page section p {
+    max-width: 740px;
+    margin: 0 auto 1rem;
+}
+
+.home-page .promo-banner {
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px solid rgba(39, 41, 44, 0.15);
+    border-radius: 18px;
+    padding: 2rem 1.5rem;
+}
+
+.home-page .feature-box {
+    margin-top: 1rem;
+}
+
+/* Enquiry page styling */
+.enquiry-page {
+    width: min(90%, 1000px);
+    margin: 3rem auto;
+    padding: 0 0 3rem;
+}
+
+.enquiry-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.enquiry-intro h2 {
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+}
+
+.enquiry-panel {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(39, 41, 44, 0.12);
+    border-radius: 18px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+}
+
+.enquiry-form {
+    width: min(100%, 820px);
+    margin: 0 auto;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.enquiry-form .form-group {
+    margin-bottom: 1.2rem;
+}
+
+.enquiry-form .form-group label {
+    display: block;
+    margin-bottom: 0.55rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.enquiry-form .form-group input,
+.enquiry-form .form-group select,
+.enquiry-form .form-group textarea {
+    width: 100%;
+    padding: 0.95rem 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #d8d2cf;
+    background-color: #fff;
+}
+
+.enquiry-form .form-group textarea {
+    min-height: 170px;
+    resize: vertical;
+}
+
+.enquiry-form .form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.enquiry-form .form-actions button,
+.enquiry-form .form-actions input[type="reset"] {
+    flex: 1;
+    min-height: 52px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.enquiry-form .form-actions button {
+    background: var(--accent);
+    color: #fff;
+}
+
+.enquiry-form .form-actions input[type="reset"] {
+    background: #ece3df;
+    color: var(--primary);
+}
+
+.enquiry-form .form-actions button:hover,
+.enquiry-form .form-actions input[type="reset"]:hover {
+    transform: translateY(-1px);
+    opacity: 0.98;
+}
+
+/* Contact page map formatting */
+.location-panel {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.location-panel h2 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+    text-align: center;
+}
+
+.location-map {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.location-map iframe {
+    display: block;
+    width: 100%;
+    min-height: 380px;
+    height: 420px;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .enquiry-form .form-actions {
+        flex-direction: column;
+    }
+
+    .location-map iframe {
+        min-height: 300px;
+        height: 340px;
+    }
+}
+
+/* About Page Styles */
+.about-page {
+    width: min(90%, 1100px);
+    margin: 0 auto;
+    padding: 2rem 0 4rem;
+}
+
+.about-intro {
+    text-align: center;
+    margin: 2rem auto 2.5rem;
+    max-width: 900px;
+    color: var(--primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.about-section {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(39, 41, 44, 0.1);
+    border-radius: 18px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+    padding: 2rem 2rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.about-section h2 {
+    margin: 0 0 1rem;
+    color: var(--primary);
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.about-section p,
+.about-section li {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #2d2d2d;
+}
+
+.about-section ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.about-section li {
+    list-style: disc;
+    padding-left: 0.35rem;
+}
+
+/* Mobile styles for About page */
+@media (max-width: 768px) {
+    .about-intro {
+        font-size: 1rem;
+    }
+
+    .about-section {
+        padding: 1.5rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-section p,
+    .about-section li {
+        font-size: 0.9rem;
     }
 }
